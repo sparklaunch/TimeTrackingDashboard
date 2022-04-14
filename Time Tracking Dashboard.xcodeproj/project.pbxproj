@@ -19,8 +19,8 @@
 		907CCA6B2807D3C20058600D /* TimeTrackingDashboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTrackingDashboardApp.swift; sourceTree = "<group>"; };
 		907CCA6C2807D3C20058600D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		907CCA6D2807D3C30058600D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		907CCA722807D3C30058600D /* TimeTrackingDashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTrackingDashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		907CCA782807D3C30058600D /* TimeTrackingDashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTrackingDashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		907CCA722807D3C30058600D /* Time Tracking Dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Tracking Dashboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		907CCA782807D3C30058600D /* Time Tracking Dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Tracking Dashboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		907CCA7A2807D3C30058600D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,9 +54,9 @@
 		907CCA6A2807D3C20058600D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				907CCA6B2807D3C20058600D /* TimeTrackingDashboardApp.swift */,
-				907CCA6C2807D3C20058600D /* ContentView.swift */,
-				907CCA6D2807D3C30058600D /* Assets.xcassets */,
+				907CCA8B2807D3EE0058600D /* Models */,
+				907CCA8A2807D3E60058600D /* Views */,
+				907CCA892807D3DD0058600D /* App */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -64,8 +64,8 @@
 		907CCA732807D3C30058600D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				907CCA722807D3C30058600D /* TimeTrackingDashboard.app */,
-				907CCA782807D3C30058600D /* TimeTrackingDashboard.app */,
+				907CCA722807D3C30058600D /* Time Tracking Dashboard.app */,
+				907CCA782807D3C30058600D /* Time Tracking Dashboard.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,12 +78,36 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		907CCA892807D3DD0058600D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				907CCA6B2807D3C20058600D /* TimeTrackingDashboardApp.swift */,
+				907CCA6D2807D3C30058600D /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		907CCA8A2807D3E60058600D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				907CCA6C2807D3C20058600D /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		907CCA8B2807D3EE0058600D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		907CCA712807D3C30058600D /* TimeTrackingDashboard (iOS) */ = {
+		907CCA712807D3C30058600D /* Time Tracking Dashboard (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 907CCA832807D3C30058600D /* Build configuration list for PBXNativeTarget "TimeTrackingDashboard (iOS)" */;
+			buildConfigurationList = 907CCA832807D3C30058600D /* Build configuration list for PBXNativeTarget "Time Tracking Dashboard (iOS)" */;
 			buildPhases = (
 				907CCA6E2807D3C30058600D /* Sources */,
 				907CCA6F2807D3C30058600D /* Frameworks */,
@@ -93,14 +117,14 @@
 			);
 			dependencies = (
 			);
-			name = "TimeTrackingDashboard (iOS)";
+			name = "Time Tracking Dashboard (iOS)";
 			productName = "TimeTrackingDashboard (iOS)";
-			productReference = 907CCA722807D3C30058600D /* TimeTrackingDashboard.app */;
+			productReference = 907CCA722807D3C30058600D /* Time Tracking Dashboard.app */;
 			productType = "com.apple.product-type.application";
 		};
-		907CCA772807D3C30058600D /* TimeTrackingDashboard (macOS) */ = {
+		907CCA772807D3C30058600D /* Time Tracking Dashboard (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 907CCA862807D3C30058600D /* Build configuration list for PBXNativeTarget "TimeTrackingDashboard (macOS)" */;
+			buildConfigurationList = 907CCA862807D3C30058600D /* Build configuration list for PBXNativeTarget "Time Tracking Dashboard (macOS)" */;
 			buildPhases = (
 				907CCA742807D3C30058600D /* Sources */,
 				907CCA752807D3C30058600D /* Frameworks */,
@@ -110,9 +134,9 @@
 			);
 			dependencies = (
 			);
-			name = "TimeTrackingDashboard (macOS)";
+			name = "Time Tracking Dashboard (macOS)";
 			productName = "TimeTrackingDashboard (macOS)";
-			productReference = 907CCA782807D3C30058600D /* TimeTrackingDashboard.app */;
+			productReference = 907CCA782807D3C30058600D /* Time Tracking Dashboard.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -133,7 +157,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 907CCA692807D3C20058600D /* Build configuration list for PBXProject "TimeTrackingDashboard" */;
+			buildConfigurationList = 907CCA692807D3C20058600D /* Build configuration list for PBXProject "Time Tracking Dashboard" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -146,8 +170,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				907CCA712807D3C30058600D /* TimeTrackingDashboard (iOS) */,
-				907CCA772807D3C30058600D /* TimeTrackingDashboard (macOS) */,
+				907CCA712807D3C30058600D /* Time Tracking Dashboard (iOS) */,
+				907CCA772807D3C30058600D /* Time Tracking Dashboard (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -243,6 +267,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -295,6 +321,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -324,7 +352,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.kim.jinwook.TimeTrackingDashboard;
-				PRODUCT_NAME = TimeTrackingDashboard;
+				PRODUCT_NAME = "Time Tracking Dashboard";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -354,7 +382,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.kim.jinwook.TimeTrackingDashboard;
-				PRODUCT_NAME = TimeTrackingDashboard;
+				PRODUCT_NAME = "Time Tracking Dashboard";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -384,7 +412,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.kim.jinwook.TimeTrackingDashboard;
-				PRODUCT_NAME = TimeTrackingDashboard;
+				PRODUCT_NAME = "Time Tracking Dashboard";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -412,7 +440,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.kim.jinwook.TimeTrackingDashboard;
-				PRODUCT_NAME = TimeTrackingDashboard;
+				PRODUCT_NAME = "Time Tracking Dashboard";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -422,7 +450,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		907CCA692807D3C20058600D /* Build configuration list for PBXProject "TimeTrackingDashboard" */ = {
+		907CCA692807D3C20058600D /* Build configuration list for PBXProject "Time Tracking Dashboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				907CCA812807D3C30058600D /* Debug */,
@@ -431,7 +459,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		907CCA832807D3C30058600D /* Build configuration list for PBXNativeTarget "TimeTrackingDashboard (iOS)" */ = {
+		907CCA832807D3C30058600D /* Build configuration list for PBXNativeTarget "Time Tracking Dashboard (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				907CCA842807D3C30058600D /* Debug */,
@@ -440,7 +468,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		907CCA862807D3C30058600D /* Build configuration list for PBXNativeTarget "TimeTrackingDashboard (macOS)" */ = {
+		907CCA862807D3C30058600D /* Build configuration list for PBXNativeTarget "Time Tracking Dashboard (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				907CCA872807D3C30058600D /* Debug */,
