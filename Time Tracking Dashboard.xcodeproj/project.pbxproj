@@ -21,6 +21,7 @@
 		907CCA972807DE1F0058600D /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCA962807DE1F0058600D /* ItemView.swift */; };
 		907CCA992807DF550058600D /* ItemContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCA982807DF550058600D /* ItemContentView.swift */; };
 		907CCA9B2807E03F0058600D /* ItemBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCA9A2807E03F0058600D /* ItemBackgroundView.swift */; };
+		907CCA9D2807E6490058600D /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCA9C2807E6490058600D /* Storage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		907CCA962807DE1F0058600D /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		907CCA982807DF550058600D /* ItemContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemContentView.swift; sourceTree = "<group>"; };
 		907CCA9A2807E03F0058600D /* ItemBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBackgroundView.swift; sourceTree = "<group>"; };
+		907CCA9C2807E6490058600D /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 		907CCA8B2807D3EE0058600D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				907CCA9C2807E6490058600D /* Storage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				907CCA8F2807D5EE0058600D /* ProfileView.swift in Sources */,
+				907CCA9D2807E6490058600D /* Storage.swift in Sources */,
 				907CCA932807D79C0058600D /* PeriodButtonsView.swift in Sources */,
 				907CCA8D2807D5A70058600D /* BackgroundView.swift in Sources */,
 				907CCA972807DE1F0058600D /* ItemView.swift in Sources */,

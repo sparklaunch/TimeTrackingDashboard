@@ -8,17 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var activePeriod: String = "Weekly"
+    @State private var activePeriod: Period = .Weekly
     private var periodUnit: String {
         switch activePeriod {
-        case "Daily":
+        case .Daily:
             return "Day"
-        case "Weekly":
+        case .Weekly:
             return "Week"
-        case "Monthly":
+        case .Monthly:
             return "Month"
-        default:
-            return "N/A"
         }
     }
     var body: some View {

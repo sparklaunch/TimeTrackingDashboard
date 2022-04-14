@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PeriodButtonsView: View {
-    @Binding var activePeriod: String
+    @Binding var activePeriod: Period
     var body: some View {
         ZStack {
             Color("CardColor")
@@ -25,7 +25,7 @@ struct PeriodButtonsView: View {
 
 struct PeriodButtonsView_Previews: PreviewProvider {
     static var previews: some View {
-        PeriodButtonsView(activePeriod: .constant("Weekly"))
+        PeriodButtonsView(activePeriod: .constant(.Weekly))
             .previewLayout(.sizeThatFits)
     }
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProfileView: View {
-    @Binding var activePeriod: String
+    @Binding var activePeriod: Period
     var body: some View {
         VStack(spacing: .zero) {
             ProfileHeaderView()
@@ -21,7 +21,7 @@ struct ProfileView: View {
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView(activePeriod: .constant("Weekly"))
+        ProfileView(activePeriod: .constant(.Weekly))
             .previewLayout(.sizeThatFits)
     }
 }
