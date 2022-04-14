@@ -20,6 +20,7 @@
 		907CCA952807D7DB0058600D /* PeriodButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCA942807D7DB0058600D /* PeriodButtonView.swift */; };
 		907CCA972807DE1F0058600D /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCA962807DE1F0058600D /* ItemView.swift */; };
 		907CCA992807DF550058600D /* ItemContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCA982807DF550058600D /* ItemContentView.swift */; };
+		907CCA9B2807E03F0058600D /* ItemBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCA9A2807E03F0058600D /* ItemBackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		907CCA942807D7DB0058600D /* PeriodButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodButtonView.swift; sourceTree = "<group>"; };
 		907CCA962807DE1F0058600D /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		907CCA982807DF550058600D /* ItemContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemContentView.swift; sourceTree = "<group>"; };
+		907CCA9A2807E03F0058600D /* ItemBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				907CCA942807D7DB0058600D /* PeriodButtonView.swift */,
 				907CCA962807DE1F0058600D /* ItemView.swift */,
 				907CCA982807DF550058600D /* ItemContentView.swift */,
+				907CCA9A2807E03F0058600D /* ItemBackgroundView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				907CCA952807D7DB0058600D /* PeriodButtonView.swift in Sources */,
 				907CCA992807DF550058600D /* ItemContentView.swift in Sources */,
 				907CCA7B2807D3C30058600D /* TimeTrackingDashboardApp.swift in Sources */,
+				907CCA9B2807E03F0058600D /* ItemBackgroundView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

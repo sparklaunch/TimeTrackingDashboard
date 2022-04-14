@@ -9,15 +9,11 @@ import SwiftUI
 
 struct ItemView: View {
     var body: some View {
-        ZStack {
-            ZStack {
-                Color("WorkColor")
-                Image(decorative: "Work")
-                    .resizable()
-                    .frame(width: 80, height: 80)
-            }
+        ZStack(alignment: .bottom) {
+            ItemBackgroundView()
             ItemContentView()
         }
+        .shadow(radius: 10)
     }
 }
 

@@ -12,8 +12,11 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             BackgroundView()
-            VStack {
+            VStack(spacing: 24) {
                 ProfileView(activePeriod: $activePeriod)
+                VStack {
+                    ItemView()
+                }
             }
             .padding()
             .shadow(radius: 10)
