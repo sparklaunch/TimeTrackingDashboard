@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var activePeriod: String = "Weekly"
     var body: some View {
         ZStack {
             BackgroundView()
             VStack {
-                ProfileView()
+                ProfileView(activePeriod: $activePeriod)
             }
             .padding()
             .shadow(radius: 10)

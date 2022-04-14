@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @Binding var activePeriod: String
     var body: some View {
         VStack(spacing: .zero) {
             ProfileHeaderView()
-            PeriodButtonsView()
+            PeriodButtonsView(activePeriod: $activePeriod)
         }
         .fixedSize(horizontal: false, vertical: true)
         .cornerRadius(15)
@@ -20,7 +21,7 @@ struct ProfileView: View {
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        ProfileView(activePeriod: .constant("Weekly"))
             .previewLayout(.sizeThatFits)
     }
 }

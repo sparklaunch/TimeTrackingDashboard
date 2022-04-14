@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PeriodButtonView: View {
     let text: String
+    let isActive: Bool
     var body: some View {
         Button {
 
@@ -16,7 +17,7 @@ struct PeriodButtonView: View {
             Text(text)
                 .font(.title3)
                 .fontWeight(.regular)
-                .foregroundColor(.white.opacity(0.5))
+                .foregroundColor(.white.opacity(isActive ? 1 : 0.5))
         }
         .frame(maxWidth: .infinity)
     }
@@ -24,7 +25,7 @@ struct PeriodButtonView: View {
 
 struct PeriodButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        PeriodButtonView(text: "Weekly")
+        PeriodButtonView(text: "Weekly", isActive: true)
             .background(Color("CardColor"))
             .previewLayout(.sizeThatFits)
     }
