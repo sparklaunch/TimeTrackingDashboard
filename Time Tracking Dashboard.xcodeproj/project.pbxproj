@@ -18,6 +18,8 @@
 		907CCA912807D7700058600D /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCA902807D7700058600D /* ProfileHeaderView.swift */; };
 		907CCA932807D79C0058600D /* PeriodButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCA922807D79C0058600D /* PeriodButtonsView.swift */; };
 		907CCA952807D7DB0058600D /* PeriodButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCA942807D7DB0058600D /* PeriodButtonView.swift */; };
+		907CCA972807DE1F0058600D /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCA962807DE1F0058600D /* ItemView.swift */; };
+		907CCA992807DF550058600D /* ItemContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCA982807DF550058600D /* ItemContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		907CCA902807D7700058600D /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		907CCA922807D79C0058600D /* PeriodButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodButtonsView.swift; sourceTree = "<group>"; };
 		907CCA942807D7DB0058600D /* PeriodButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodButtonView.swift; sourceTree = "<group>"; };
+		907CCA962807DE1F0058600D /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		907CCA982807DF550058600D /* ItemContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				907CCA902807D7700058600D /* ProfileHeaderView.swift */,
 				907CCA922807D79C0058600D /* PeriodButtonsView.swift */,
 				907CCA942807D7DB0058600D /* PeriodButtonView.swift */,
+				907CCA962807DE1F0058600D /* ItemView.swift */,
+				907CCA982807DF550058600D /* ItemContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,9 +224,11 @@
 				907CCA8F2807D5EE0058600D /* ProfileView.swift in Sources */,
 				907CCA932807D79C0058600D /* PeriodButtonsView.swift in Sources */,
 				907CCA8D2807D5A70058600D /* BackgroundView.swift in Sources */,
+				907CCA972807DE1F0058600D /* ItemView.swift in Sources */,
 				907CCA912807D7700058600D /* ProfileHeaderView.swift in Sources */,
 				907CCA7D2807D3C30058600D /* ContentView.swift in Sources */,
 				907CCA952807D7DB0058600D /* PeriodButtonView.swift in Sources */,
+				907CCA992807DF550058600D /* ItemContentView.swift in Sources */,
 				907CCA7B2807D3C30058600D /* TimeTrackingDashboardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
