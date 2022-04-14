@@ -13,9 +13,9 @@ struct PeriodButtonsView: View {
         ZStack {
             Color("CardColor")
             HStack {
-                PeriodButtonView(text: "Daily", isActive: activePeriod == "Daily")
-                PeriodButtonView(text: "Weekly", isActive: activePeriod == "Weekly")
-                PeriodButtonView(text: "Monthly", isActive: activePeriod == "Monthly")
+                PeriodButtonView(text: "Daily", activePeriod: $activePeriod)
+                PeriodButtonView(text: "Weekly", activePeriod: $activePeriod)
+                PeriodButtonView(text: "Monthly", activePeriod: $activePeriod)
             }
             .padding(24)
         }
