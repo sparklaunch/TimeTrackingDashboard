@@ -19,6 +19,15 @@ struct ContentView: View {
             return "Month"
         }
     }
+    private var activeReport: Report {
+        return reports[activePeriod]!
+    }
+    private var activeCurrentRecord: Record {
+        return activeReport.currentRecord
+    }
+    private var activeLastRecord: Record {
+        return activeReport.lastRecord
+    }
     var body: some View {
         ZStack {
             BackgroundView()
@@ -26,12 +35,12 @@ struct ContentView: View {
                 VStack(spacing: 24) {
                     ProfileView(activePeriod: $activePeriod)
                     VStack(spacing: 16) {
-                        ItemView(imageName: "Work", colorName: "WorkColor", title: "Work", hourAmount: 32, lastHourAmount: 36, periodUnit: periodUnit)
-                        ItemView(imageName: "Play", colorName: "PlayColor", title: "Play", hourAmount: 10, lastHourAmount: 8, periodUnit: periodUnit)
-                        ItemView(imageName: "Study", colorName: "StudyColor", title: "Study", hourAmount: 4, lastHourAmount: 7, periodUnit: periodUnit)
-                        ItemView(imageName: "Exercise", colorName: "ExerciseColor", title: "Exercise", hourAmount: 4, lastHourAmount: 5, periodUnit: periodUnit)
-                        ItemView(imageName: "Social", colorName: "SocialColor", title: "Social", hourAmount: 5, lastHourAmount: 10, periodUnit: periodUnit)
-                        ItemView(imageName: "SelfCare", colorName: "SelfCareColor", title: "Self Care", hourAmount: 2, lastHourAmount: 2, periodUnit: periodUnit)
+                        ItemView(imageName: "Work", colorName: "WorkColor", title: "Work", hourAmount: activeCurrentRecord.workHours, lastHourAmount: activeLastRecord.workHours, periodUnit: periodUnit)
+                        ItemView(imageName: "Play", colorName: "PlayColor", title: "Play", hourAmount: activeCurrentRecord.playHours, lastHourAmount: activeLastRecord.playHours, periodUnit: periodUnit)
+                        ItemView(imageName: "Study", colorName: "StudyColor", title: "Study", hourAmount: activeCurrentRecord.studyHours, lastHourAmount: activeLastRecord.studyHours, periodUnit: periodUnit)
+                        ItemView(imageName: "Exercise", colorName: "ExerciseColor", title: "Exercise", hourAmount: activeCurrentRecord.exerciseHours, lastHourAmount: activeLastRecord.exerciseHours, periodUnit: periodUnit)
+                        ItemView(imageName: "Social", colorName: "SocialColor", title: "Social", hourAmount: activeCurrentRecord.socialHours, lastHourAmount: activeLastRecord.socialHours, periodUnit: periodUnit)
+                        ItemView(imageName: "SelfCare", colorName: "SelfCareColor", title: "Self Care", hourAmount: activeCurrentRecord.selfCareHours, lastHourAmount: activeLastRecord.selfCareHours, periodUnit: periodUnit)
                     }
                 }
                 .padding()
