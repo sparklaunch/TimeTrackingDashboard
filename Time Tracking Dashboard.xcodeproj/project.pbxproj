@@ -13,6 +13,7 @@
 		907CCA7E2807D3C30058600D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCA6C2807D3C20058600D /* ContentView.swift */; };
 		907CCA7F2807D3C30058600D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 907CCA6D2807D3C30058600D /* Assets.xcassets */; };
 		907CCA802807D3C30058600D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 907CCA6D2807D3C30058600D /* Assets.xcassets */; };
+		907CCA8D2807D5A70058600D /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCA8C2807D5A70058600D /* BackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		907CCA722807D3C30058600D /* Time Tracking Dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Tracking Dashboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		907CCA782807D3C30058600D /* Time Tracking Dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Tracking Dashboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		907CCA7A2807D3C30058600D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		907CCA8C2807D5A70058600D /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				907CCA6C2807D3C20058600D /* ContentView.swift */,
+				907CCA8C2807D5A70058600D /* BackgroundView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				907CCA8D2807D5A70058600D /* BackgroundView.swift in Sources */,
 				907CCA7D2807D3C30058600D /* ContentView.swift in Sources */,
 				907CCA7B2807D3C30058600D /* TimeTrackingDashboardApp.swift in Sources */,
 			);
