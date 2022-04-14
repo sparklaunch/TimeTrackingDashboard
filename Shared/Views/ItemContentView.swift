@@ -8,27 +8,34 @@
 import SwiftUI
 
 struct ItemContentView: View {
+    let title: String
+    let hourAmount: Int
+    let lastHourAmount: Int
     var body: some View {
         ZStack {
             Color("CardColor")
             VStack {
                 HStack {
-                    Text("Work")
+                    Text(title)
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                     Spacer()
-                    Image(decorative: "Ellipsis")
-                        .resizable()
-                        .frame(width: 21, height: 5)
+                    Button {
+                        // TODO: SHOW MORE FUNCTIONALITY.
+                    } label: {
+                        Image(decorative: "Ellipsis")
+                            .resizable()
+                            .frame(width: 21, height: 5)
+                    }
                 }
                 HStack(alignment: .top) {
-                    Text("32hrs")
+                    Text("\(hourAmount)hrs")
                         .font(.largeTitle)
                         .fontWeight(.light)
                         .foregroundColor(.white)
                     Spacer()
-                    Text("Last Week - 36hrs")
+                    Text("Last Week - \(lastHourAmount)hrs")
                         .font(.title3)
                         .fontWeight(.semibold)
                         .foregroundColor(.white.opacity(0.5))
@@ -43,7 +50,7 @@ struct ItemContentView: View {
 
 struct ItemContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ItemContentView()
+        ItemContentView(title: "Work", hourAmount: 32, lastHourAmount: 36)
             .previewLayout(.sizeThatFits)
     }
 }

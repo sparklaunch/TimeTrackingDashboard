@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct ItemBackgroundView: View {
+    let imageName: String
+    let colorName: String
     var body: some View {
         ZStack(alignment: .topTrailing) {
-            Color("WorkColor")
-            Image(decorative: "Work")
+            Color(colorName)
+            Image(decorative: imageName)
                 .resizable()
                 .frame(width: 100, height: 100)
                 .offset(x: -15, y: -15)
@@ -23,7 +25,7 @@ struct ItemBackgroundView: View {
 
 struct ItemBackgroundView_Previews: PreviewProvider {
     static var previews: some View {
-        ItemBackgroundView()
+        ItemBackgroundView(imageName: "Work", colorName: "WorkColor")
             .previewLayout(.sizeThatFits)
     }
 }

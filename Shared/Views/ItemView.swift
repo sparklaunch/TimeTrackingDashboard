@@ -10,8 +10,8 @@ import SwiftUI
 struct ItemView: View {
     var body: some View {
         ZStack(alignment: .bottom) {
-            ItemBackgroundView()
-            ItemContentView()
+            ItemBackgroundView(imageName: "Work", colorName: "WorkColor")
+            ItemContentView(title: "Work", hourAmount: 32, lastHourAmount: 36)
         }
         .shadow(radius: 10)
     }
