@@ -8,10 +8,16 @@
 import SwiftUI
 
 struct ItemView: View {
+    let imageName: String
+    let colorName: String
+    let title: String
+    let hourAmount: Int
+    let lastHourAmount: Int
+    let periodUnit: String
     var body: some View {
         ZStack(alignment: .bottom) {
-            ItemBackgroundView(imageName: "Work", colorName: "WorkColor")
-            ItemContentView(title: "Work", hourAmount: 32, lastHourAmount: 36)
+            ItemBackgroundView(imageName: imageName, colorName: colorName)
+            ItemContentView(title: title, hourAmount: hourAmount, lastHourAmount: lastHourAmount, periodUnit: periodUnit)
         }
         .shadow(radius: 10)
     }
@@ -19,7 +25,7 @@ struct ItemView: View {
 
 struct ItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ItemView()
+        ItemView(imageName: "Work", colorName: "WorkColor", title: "Work", hourAmount: 32, lastHourAmount: 36, periodUnit: "Week")
             .previewLayout(.sizeThatFits)
     }
 }

@@ -11,6 +11,7 @@ struct ItemContentView: View {
     let title: String
     let hourAmount: Int
     let lastHourAmount: Int
+    let periodUnit: String
     var body: some View {
         ZStack {
             Color("CardColor")
@@ -35,7 +36,7 @@ struct ItemContentView: View {
                         .fontWeight(.light)
                         .foregroundColor(.white)
                     Spacer()
-                    Text("Last Week - \(lastHourAmount)hrs")
+                    Text("Last \(periodUnit) - \(lastHourAmount)hrs")
                         .font(.title3)
                         .fontWeight(.semibold)
                         .foregroundColor(.white.opacity(0.5))
@@ -50,7 +51,7 @@ struct ItemContentView: View {
 
 struct ItemContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ItemContentView(title: "Work", hourAmount: 32, lastHourAmount: 36)
+        ItemContentView(title: "Work", hourAmount: 32, lastHourAmount: 36, periodUnit: "Week")
             .previewLayout(.sizeThatFits)
     }
 }

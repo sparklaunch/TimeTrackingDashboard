@@ -9,13 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var activePeriod: String = "Weekly"
+    private var periodUnit: String {
+        switch activePeriod {
+        case "Daily":
+            return "Day"
+        case "Weekly":
+            return "Week"
+        case "Monthly":
+            return "Month"
+        default:
+            return "N/A"
+        }
+    }
     var body: some View {
         ZStack {
             BackgroundView()
             VStack(spacing: 24) {
                 ProfileView(activePeriod: $activePeriod)
                 VStack {
-                    ItemView()
+                    ItemView(imageName: "Work", colorName: "WorkColor", title: "Work", hourAmount: 32, lastHourAmount: 36, periodUnit: periodUnit)
                 }
             }
             .padding()
