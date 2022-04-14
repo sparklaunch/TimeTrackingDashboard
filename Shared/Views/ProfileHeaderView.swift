@@ -11,7 +11,7 @@ struct ProfileHeaderView: View {
     var body: some View {
         ZStack {
             Color("ProfileColor")
-            HStack(spacing: 16) {
+            HStack(spacing: Constants.General.narrowSpacing) {
                 Image(decorative: "Jeremy")
                     .resizable()
                     .frame(width: 80, height: 80)
@@ -30,10 +30,10 @@ struct ProfileHeaderView: View {
                         .foregroundColor(.white)
                 }
             }
-            .padding(24)
+            .padding(Constants.General.widePadding)
         }
         .fixedSize(horizontal: false, vertical: true)
-        .cornerRadius(15)
+        .cornerRadius(Constants.General.cornerRadius)
         .background(Color("CardColor"))
     }
 }

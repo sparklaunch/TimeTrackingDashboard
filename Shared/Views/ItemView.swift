@@ -19,7 +19,7 @@ struct ItemView: View {
             ItemBackgroundView(imageName: imageName, colorName: colorName)
             ItemContentView(title: title, hourAmount: hourAmount, lastHourAmount: lastHourAmount, periodUnit: periodUnit)
         }
-        .shadow(radius: 10)
+        .shadow(radius: Constants.General.shadowRadius)
     }
 }
 

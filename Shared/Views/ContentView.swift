@@ -32,9 +32,9 @@ struct ContentView: View {
         ZStack {
             BackgroundView()
             ScrollView {
-                VStack(spacing: 24) {
+                VStack(spacing: Constants.General.wideSpacing) {
                     ProfileView(activePeriod: $activePeriod)
-                    VStack(spacing: 16) {
+                    VStack(spacing: Constants.General.narrowSpacing) {
                         ItemView(imageName: "Work", colorName: "WorkColor", title: "Work", hourAmount: activeCurrentRecord.workHours, lastHourAmount: activeLastRecord.workHours, periodUnit: periodUnit)
                         ItemView(imageName: "Play", colorName: "PlayColor", title: "Play", hourAmount: activeCurrentRecord.playHours, lastHourAmount: activeLastRecord.playHours, periodUnit: periodUnit)
                         ItemView(imageName: "Study", colorName: "StudyColor", title: "Study", hourAmount: activeCurrentRecord.studyHours, lastHourAmount: activeLastRecord.studyHours, periodUnit: periodUnit)
@@ -44,7 +44,7 @@ struct ContentView: View {
                     }
                 }
                 .padding()
-            .shadow(radius: 10)
+                .shadow(radius: Constants.General.shadowRadius)
             }
         }
     }

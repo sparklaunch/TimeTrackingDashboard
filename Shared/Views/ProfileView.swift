@@ -15,7 +15,7 @@ struct ProfileView: View {
             PeriodButtonsView(activePeriod: $activePeriod)
         }
         .fixedSize(horizontal: false, vertical: true)
-        .cornerRadius(15)
+        .cornerRadius(Constants.General.cornerRadius)
     }
 }
 

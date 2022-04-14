@@ -19,7 +19,7 @@ struct ItemBackgroundView: View {
                 .offset(x: -15, y: -15)
         }
         .frame(height: 180)
-        .cornerRadius(15)
+        .cornerRadius(Constants.General.cornerRadius)
     }
 }
 

@@ -58,10 +58,10 @@ struct ItemContentView: View {
                         .foregroundColor(.white.opacity(0.5))
                 }
             }
-            .padding(24)
+            .padding(Constants.General.widePadding)
         }
         .fixedSize(horizontal: false, vertical: true)
-        .cornerRadius(15)
+        .cornerRadius(Constants.General.cornerRadius)
     }
 }
 
