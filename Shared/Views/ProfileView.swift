@@ -13,6 +13,8 @@ struct ProfileView: View {
             ProfileHeaderView()
             PeriodButtonsView()
         }
+        .fixedSize(horizontal: false, vertical: true)
+        .cornerRadius(15)
     }
 }
 

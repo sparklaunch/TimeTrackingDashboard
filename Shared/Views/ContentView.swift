@@ -14,6 +14,8 @@ struct ContentView: View {
             VStack {
                 ProfileView()
             }
+            .padding()
+            .shadow(radius: 10)
         }
     }
 }

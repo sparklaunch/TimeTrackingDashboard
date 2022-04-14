@@ -30,7 +30,11 @@ struct ProfileHeaderView: View {
                         .foregroundColor(.white)
                 }
             }
+            .padding(24)
         }
+        .fixedSize(horizontal: false, vertical: true)
+        .cornerRadius(15)
+        .background(Color("CardColor"))
     }
 }
 

@@ -16,7 +16,9 @@ struct PeriodButtonsView: View {
                 PeriodButtonView(text: "Weekly")
                 PeriodButtonView(text: "Monthly")
             }
+            .padding(24)
         }
+        .fixedSize(horizontal: false, vertical: true)
     }
 }
 
