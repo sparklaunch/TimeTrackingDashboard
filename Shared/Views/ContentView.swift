@@ -24,15 +24,21 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             BackgroundView()
-            VStack(spacing: 24) {
-                ProfileView(activePeriod: $activePeriod)
-                VStack(spacing: 16) {
-                    ItemView(imageName: "Work", colorName: "WorkColor", title: "Work", hourAmount: 32, lastHourAmount: 36, periodUnit: periodUnit)
-                    ItemView(imageName: "Play", colorName: "PlayColor", title: "Play", hourAmount: 10, lastHourAmount: 8, periodUnit: periodUnit)
+            ScrollView {
+                VStack(spacing: 24) {
+                    ProfileView(activePeriod: $activePeriod)
+                    VStack(spacing: 16) {
+                        ItemView(imageName: "Work", colorName: "WorkColor", title: "Work", hourAmount: 32, lastHourAmount: 36, periodUnit: periodUnit)
+                        ItemView(imageName: "Play", colorName: "PlayColor", title: "Play", hourAmount: 10, lastHourAmount: 8, periodUnit: periodUnit)
+                        ItemView(imageName: "Study", colorName: "StudyColor", title: "Study", hourAmount: 4, lastHourAmount: 7, periodUnit: periodUnit)
+                        ItemView(imageName: "Exercise", colorName: "ExerciseColor", title: "Exercise", hourAmount: 4, lastHourAmount: 5, periodUnit: periodUnit)
+                        ItemView(imageName: "Social", colorName: "SocialColor", title: "Social", hourAmount: 5, lastHourAmount: 10, periodUnit: periodUnit)
+                        ItemView(imageName: "SelfCare", colorName: "SelfCareColor", title: "Self Care", hourAmount: 2, lastHourAmount: 2, periodUnit: periodUnit)
+                    }
                 }
-            }
-            .padding()
+                .padding()
             .shadow(radius: 10)
+            }
         }
     }
 }
