@@ -26,8 +26,9 @@ struct ContentView: View {
             BackgroundView()
             VStack(spacing: 24) {
                 ProfileView(activePeriod: $activePeriod)
-                VStack {
+                VStack(spacing: 16) {
                     ItemView(imageName: "Work", colorName: "WorkColor", title: "Work", hourAmount: 32, lastHourAmount: 36, periodUnit: periodUnit)
+                    ItemView(imageName: "Play", colorName: "PlayColor", title: "Play", hourAmount: 10, lastHourAmount: 8, periodUnit: periodUnit)
                 }
             }
             .padding()

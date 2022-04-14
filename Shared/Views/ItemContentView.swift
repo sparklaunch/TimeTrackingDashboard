@@ -10,7 +10,23 @@ import SwiftUI
 struct ItemContentView: View {
     let title: String
     let hourAmount: Int
+    private var hourAmountString: String {
+        if hourAmount == 1 {
+            return "\(hourAmount)hr"
+        }
+        else {
+            return "\(hourAmount)hrs"
+        }
+    }
     let lastHourAmount: Int
+    private var lastHourAmountString: String {
+        if lastHourAmount == 1 {
+            return "\(lastHourAmount)hr"
+        }
+        else {
+            return "\(lastHourAmount)hrs"
+        }
+    }
     let periodUnit: String
     var body: some View {
         ZStack {
@@ -31,12 +47,12 @@ struct ItemContentView: View {
                     }
                 }
                 HStack(alignment: .top) {
-                    Text("\(hourAmount)hrs")
+                    Text(hourAmountString)
                         .font(.largeTitle)
                         .fontWeight(.light)
                         .foregroundColor(.white)
                     Spacer()
-                    Text("Last \(periodUnit) - \(lastHourAmount)hrs")
+                    Text("Last \(periodUnit) - \(lastHourAmountString)")
                         .font(.title3)
                         .fontWeight(.semibold)
                         .foregroundColor(.white.opacity(0.5))
